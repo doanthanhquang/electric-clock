@@ -8,6 +8,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -90,4 +91,28 @@ body {
     background: var(--clr);
     border-radius: 50%;
     box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+label{
+    color: white;
+}
+input:hover{
+    background: #1e90ff;
+    color: white;
+}
+
+input{
+    font-size: 12pt;
+    width: 85px;
+    margin-left: 15px;
+    padding: 3px;
+    background: white;
+    border: none;
+    border: 1px solid lightblue;
 }
