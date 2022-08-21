@@ -15,58 +15,9 @@ setInterval(() => {
     var m = new Date().getMinutes();
     var s = new Date().getSeconds();
 
-    let vietnam = document.getElementById('vn')
-    vietnam.onclick = function(){
-        h = h < 10 ? "0" + h : h;
-        m = m < 10 ? "0" + m : m;
-        s = s < 10 ? "0" + s : s;
-
-        hours.innerHTML = h + "<br><span>Hours</span>";
-        minutes.innerHTML = m + "<br><span>Minutes</span>";
-        seconds.innerHTML = s + "<br><span>Seconds</span>";
-        
-    }
-    let london = document.getElementById('ld');
-    london.onclick = function() {        
-        h = h - 6;                                  
-        h = h < 10 ? "0" + h : h; 
-        m = m < 10 ? "0" + m : m;
-        s = s < 10 ? "0" + s : s;
-        
-        hours.innerHTML = h + "<br><span>Hours</span>";
-        minutes.innerHTML = m + "<br><span>Minutes</span>";
-        seconds.innerHTML = s + "<br><span>Seconds</span>";
-    }
-
-    let newyork = document.getElementById('ny');
-    newyork.onclick = function() {   
-        h = h < 11 ? (24 - (11 - h)) : h -11;
-        h = h < 10 ? "0" + h : h;
-        m = m < 10 ? "0" + m : m;
-        s = s < 10 ? "0" + s : s;
-        
-        hours.innerHTML = h + "<br><span>Hours</span>";
-        minutes.innerHTML = m + "<br><span>Minutes</span>";
-        seconds.innerHTML = s + "<br><span>Seconds</span>";
-    }
-
-    let france = document.getElementById('fr');
-    france.onclick = function() {
-        h = h - 5;  
-
-        h = h < 10 ? "0" + h : h;
-        m = m < 10 ? "0" + m : m;
-        s = s < 10 ? "0" + s : s; 
-
-        hours.innerHTML = h + "<br><span>Hours</span>";
-        minutes.innerHTML = m + "<br><span>Minutes</span>";
-        seconds.innerHTML = s + "<br><span>Seconds</span>";
-    }
-
-
-    // h = h < 10 ? "0" + h : h;
-    // m = m < 10 ? "0" + m : m;
-    // s = s < 10 ? "0" + s : s;
+    h = h < 10 ? "0" + h : h;
+    m = m < 10 ? "0" + m : m;
+    s = s < 10 ? "0" + s : s;
 
     hours.innerHTML = h + "<br><span>Hours</span>";
     minutes.innerHTML = m + "<br><span>Minutes</span>";
